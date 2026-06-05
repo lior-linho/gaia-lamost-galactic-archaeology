@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environment
+.venv/
+.env
+
+# Data files
+data/raw/*
+data/processed/*
+data/external/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+# System files
+.DS_Store
+
+# Generated figures
+figures/*.png
+figures/*.pdf
+figures/*.jpg

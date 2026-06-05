@@ -1,0 +1,13 @@
+numpy
+pandas
+matplotlib
+scipy
+scikit-learn
+astropy
+astroquery
+pyvo
+tqdm
+jupyter
+ipykernel
+umap-learn
+hdbscan
