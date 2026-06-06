@@ -202,6 +202,10 @@ figures/gaia_lamost_cmd_colored_by_feh.png
 figures/gaia_lamost_rv_vs_feh.png
 ```
 
+### Milestone summary
+
+LAMOST DR9 stellar parameters were integrated with Gaia DR3 astrometry and photometry through Gaia source IDs. A validated Gaia–LAMOST cross-matched sample was produced, and first chemo-photometric validation figures were generated.
+
 ### Current status
 
 Milestone 2 core workflow is now working on a small LAMOST test sample.
@@ -213,3 +217,295 @@ Next steps:
 - compute tangential velocity from Gaia proper motion and distance
 - combine radial velocity and tangential information for kinematic analysis
 - prepare for Milestone 3: chemo-kinematic feature construction
+
+## Milestone 3: Chemo-kinematic Feature Construction
+
+Completed the first chemo-kinematic feature construction workflow using the Gaia–LAMOST crossmatched pilot sample.
+
+This milestone transforms the Gaia–LAMOST merged catalogue from a crossmatched data table into a first chemo-kinematic feature table that can be used for later Galactic archaeology workflow validation.
+
+The current result should be interpreted as:
+
+```text
+workflow validation
+pilot sample analysis
+small-field demonstration
+```
+
+It should not be interpreted as a final Galactic archaeology result.
+
+### Input data
+
+Input file:
+
+```text
+data/processed/gaia_lamost_crossmatched_sample.csv
+```
+
+Input sample size:
+
+```text
+138 stars × 29 columns
+```
+
+The input table contains Gaia astrometry and photometry together with LAMOST stellar parameters and radial velocities.
+
+Important input columns include:
+
+```text
+source_id
+ra_gaia
+dec_gaia
+parallax
+parallax_over_error
+pmra
+pmdec
+phot_g_mean_mag
+bp_rp
+ruwe
+distance_pc
+absolute_g_mag
+teff
+logg
+feh
+rv
+snrg
+id_match_sep_arcsec
+```
+
+### Output data
+
+Output feature table:
+
+```text
+data/processed/gaia_lamost_chemo_kinematic_features.csv
+```
+
+Output sample size:
+
+```text
+138 stars × 36 columns
+```
+
+The output table preserves the original Gaia–LAMOST crossmatched fields and adds newly constructed chemo-kinematic features.
+
+### Constructed kinematic features
+
+New kinematic features:
+
+```text
+pm_total
+tangential_velocity_kms
+reduced_pm_g
+```
+
+Definitions:
+
+```text
+pm_total = sqrt(pmra^2 + pmdec^2)
+```
+
+where `pmra` and `pmdec` are in mas/yr.
+
+```text
+tangential_velocity_kms = 4.74047 * pm_total / parallax
+```
+
+where:
+
+```text
+pm_total: mas/yr
+parallax: mas
+tangential_velocity_kms: km/s
+```
+
+Reduced proper motion in Gaia G band:
+
+```text
+H_G = G + 5 * log10(pm_total_arcsec_per_year) + 5
+```
+
+where:
+
+```text
+pm_total_arcsec_per_year = pm_total / 1000
+```
+
+The reduced proper motion is used here as a kinematic proxy for workflow validation.
+
+### Kinematic feature statistics
+
+Basic summary of constructed kinematic features:
+
+```text
+pm_total:
+mean ≈ 13.84 mas/yr
+max  ≈ 53.62 mas/yr
+
+tangential_velocity_kms:
+mean ≈ 35.37 km/s
+max  ≈ 131.66 km/s
+
+reduced_pm_g:
+mean ≈ 8.13
+max  ≈ 11.37
+```
+
+No missing values were found in the required kinematic feature columns.
+
+### Constructed chemical grouping
+
+A simple metallicity grouping was constructed from LAMOST `[Fe/H]`.
+
+Metallicity group definition:
+
+```text
+metal_poor:   [Fe/H] < -0.5
+solar_like:  -0.5 <= [Fe/H] <= 0.2
+metal_rich:   [Fe/H] > 0.2
+```
+
+New chemical grouping column:
+
+```text
+metallicity_group
+```
+
+Metallicity group counts:
+
+```text
+solar_like    114
+metal_rich     21
+metal_poor      3
+```
+
+These groups are used only for pilot-sample workflow validation.
+
+### Candidate selection flags
+
+Constructed candidate flag columns:
+
+```text
+high_vtan_candidate
+metal_poor_candidate
+chemo_kinematic_candidate
+```
+
+Definitions:
+
+```text
+high_vtan_candidate:
+tangential_velocity_kms > 100
+
+metal_poor_candidate:
+feh < -0.5
+
+chemo_kinematic_candidate:
+tangential_velocity_kms > 100 and feh < -0.5
+```
+
+Candidate flag counts:
+
+```text
+high_vtan_candidate           1
+metal_poor_candidate          3
+chemo_kinematic_candidate     0
+```
+
+These flags are not final population classifications. They are simple candidate-selection indicators used to validate the chemo-kinematic workflow.
+
+### Validation plots
+
+Generated Milestone 3 validation plots:
+
+```text
+figures/gaia_lamost_vtan_distribution.png
+figures/gaia_lamost_vtan_vs_feh.png
+figures/gaia_lamost_cmd_colored_by_vtan.png
+figures/gaia_lamost_reduced_pm_diagram.png
+```
+
+Plot purposes:
+
+```text
+gaia_lamost_vtan_distribution.png
+```
+
+Checks the tangential velocity distribution and identifies whether any high-velocity outliers are present.
+
+```text
+gaia_lamost_vtan_vs_feh.png
+```
+
+Provides a first comparison between tangential velocity and metallicity.
+
+```text
+gaia_lamost_cmd_colored_by_vtan.png
+```
+
+Shows where stars with different tangential velocities are located on the Gaia color-magnitude diagram.
+
+```text
+gaia_lamost_reduced_pm_diagram.png
+```
+
+Uses reduced proper motion as a kinematic proxy and visualizes the sample by metallicity group.
+
+### Notebook
+
+Created notebook:
+
+```text
+notebooks/03_chemo_kinematic_features.ipynb
+```
+
+The notebook performs the following workflow:
+
+```text
+1. Load Gaia–LAMOST crossmatched sample
+2. Verify required columns
+3. Construct pm_total
+4. Construct tangential_velocity_kms
+5. Construct reduced_pm_g
+6. Construct metallicity_group
+7. Construct candidate selection flags
+8. Generate validation plots
+9. Save chemo-kinematic feature table
+```
+
+### Interpretation
+
+The current sample contains only:
+
+```text
+138 stars
+```
+
+Therefore, Milestone 3 should be interpreted as a small pilot-sample demonstration.
+
+The main achievement is not a scientific discovery, but a validated workflow showing that:
+
+```text
+Gaia astrometry + Gaia photometry + LAMOST spectroscopy
+```
+
+can be merged and transformed into:
+
+```text
+a chemo-kinematic feature table
+```
+
+This prepares the project for later expansion to a larger Gaia–LAMOST sample and for future population-separation methods such as clustering or dimensionality reduction.
+
+### Next milestone direction
+
+The next stage can expand this workflow toward:
+
+```text
+larger Gaia–LAMOST samples
+more complete kinematic features
+UVW velocity construction
+Galactocentric coordinate transformation
+UMAP / HDBSCAN clustering
+thin disk / thick disk / halo candidate exploration
+```
