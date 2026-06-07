@@ -509,3 +509,46 @@ Galactocentric coordinate transformation
 UMAP / HDBSCAN clustering
 thin disk / thick disk / halo candidate exploration
 ```
+
+## Milestone 4 Checkpoint: Gaia Larger Sample Preparation
+
+Milestone 4 has started with a larger Gaia-side sample preparation workflow.
+
+Completed in this checkpoint:
+
+- Created `notebooks/04_larger_sample_kinematic_preparation.ipynb`
+- Defined a larger Milestone 4 sky region:
+  - RA: 120–130 deg
+  - DEC: -5 to 5 deg
+- Prepared reusable LAMOST column-standardization and reading functions
+- Confirmed that `data/raw/lamost_dr9_larger_sample.csv` is not yet available locally
+- Queried Gaia DR3 for the larger sky region
+- Saved Gaia larger raw sample locally:
+  - `data/raw/gaia_dr3_larger_lamost_region_sample.csv`
+  - Shape: 50000 stars × 10 columns
+- Constructed basic Gaia features:
+  - `distance_pc`
+  - `absolute_g_mag`
+- Saved Gaia larger processed feature table locally:
+  - `data/processed/gaia_dr3_larger_lamost_region_with_features.csv`
+  - Shape: 50000 stars × 12 columns
+- Generated Gaia larger validation figures:
+  - `figures/gaia_lamost_larger_sky_distribution.png`
+  - `figures/gaia_lamost_larger_cmd.png`
+  - `figures/gaia_lamost_larger_distance_distribution.png`
+  - `figures/gaia_lamost_larger_proper_motion_space.png`
+
+Notes:
+
+- The Gaia query used `SELECT TOP 50000`, and the result reached this limit.
+- Therefore, the current Gaia larger sample should be interpreted as a truncated larger-region workflow sample rather than a complete spatially uniform Gaia DR3 sample.
+- The larger LAMOST sample still needs to be obtained before Gaia–LAMOST source_id cross-match can be performed.
+
+Next steps:
+
+- Obtain or import `data/raw/lamost_dr9_larger_sample.csv`
+- Standardize the larger LAMOST sample
+- Perform Gaia–LAMOST source_id cross-match
+- Validate coordinate separation
+- Construct larger-sample chemo-kinematic features
+- Prepare Galactic coordinates and UVW input fields
