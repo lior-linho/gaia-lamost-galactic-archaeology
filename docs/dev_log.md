@@ -552,3 +552,101 @@ Next steps:
 - Validate coordinate separation
 - Construct larger-sample chemo-kinematic features
 - Prepare Galactic coordinates and UVW input fields
+
+## Milestone 4 Completed: Larger Gaia-LAMOST Feature Preparation
+
+Milestone 4 has been completed.
+
+This milestone expanded the project from the Milestone 3 pilot Gaia–LAMOST sample to a larger matched stellar sample suitable for later chemo-kinematic analysis.
+
+Completed work:
+
+- Created and completed `notebooks/04_larger_sample_kinematic_preparation.ipynb`
+- Downloaded and imported a larger LAMOST DR9 AFGK sample
+- Queried Gaia DR3 for the corresponding LAMOST sky region
+- Performed coordinate-based Gaia–LAMOST cross-match
+- Adopted a conservative `1.0 arcsec` matching radius
+- Built an observation-level matched table
+- Detected and handled duplicate Gaia `source_id` entries
+- Created a deduplicated star-level larger feature table
+- Constructed larger-sample chemo-kinematic features
+- Added Galactic coordinates:
+  - `gal_l`
+  - `gal_b`
+- Checked UVW input-field completeness
+- Generated final validation figures
+
+Input samples:
+
+```text
+LAMOST larger sample:
+2979 rows × 16 columns
+
+Gaia LAMOST-region sample:
+36531 stars × 12 columns
+```
+
+Cross-match result:
+
+```text
+Observation-level matched sample:
+2487 rows × 29 columns
+
+Deduplicated star-level sample:
+1838 unique Gaia sources
+```
+
+Final feature table:
+
+```text
+data/processed/gaia_lamost_larger_chemo_kinematic_features.csv
+Shape: 1838 stars × 38 columns
+```
+
+Constructed features:
+
+```text
+pm_total
+tangential_velocity_kms
+reduced_pm_g
+metallicity_group
+high_vtan_candidate
+metal_poor_candidate
+chemo_kinematic_candidate
+gal_l
+gal_b
+```
+
+Final candidate counts:
+
+```text
+high_vtan_candidate:          38
+metal_poor_candidate:        148
+chemo_kinematic_candidate:    27
+```
+
+Final validation figures:
+
+```text
+figures/gaia_lamost_larger_vtan_distribution.png
+figures/gaia_lamost_larger_vtan_vs_feh.png
+figures/gaia_lamost_larger_cmd_colored_by_vtan.png
+figures/gaia_lamost_larger_reduced_pm_diagram.png
+figures/gaia_lamost_larger_galactic_lb_distribution.png
+```
+
+Key result:
+
+```text
+The larger Gaia–LAMOST workflow successfully identified a non-empty set of metal-poor high-tangential-velocity candidates.
+```
+
+This demonstrates that the pilot chemo-kinematic workflow can scale to a larger matched stellar sample.
+
+Next milestone direction:
+
+- Validate candidate properties in more detail
+- Add formal Galactic velocity calculations
+- Explore UMAP / HDBSCAN clustering
+- Compare candidates with known Milky Way stellar populations
+- Prepare report-ready figures and write-up
