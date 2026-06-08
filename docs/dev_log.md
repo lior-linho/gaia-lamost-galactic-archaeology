@@ -700,3 +700,54 @@ Limitations:
 - Distances are based on simple parallax inversion
 - Galactocentric velocities depend on the default `astropy` frame assumptions
 - No orbit integration, action-space analysis, or integrals-of-motion analysis has been performed yet
+
+## Milestone 6 — Candidate-level Diagnostic Analysis and Report Tables
+
+Milestone 6 converts the chemo-kinematic candidate list from Milestone 5 into a candidate-level diagnostic dataset suitable for reporting, interpretation, and later scientific discussion.
+
+### Main goals
+
+- Construct a candidate-level diagnostic table for the Milestone 5 candidate stars.
+- Add readable candidate flags based on metallicity, tangential velocity, and Galactocentric total velocity.
+- Generate a compact summary table for report and README usage.
+- Highlight candidate stars on the Gaia color–magnitude diagram.
+- Compare candidate velocity and metallicity distributions against the larger Gaia–LAMOST sample.
+
+### Candidate summary
+
+- Number of candidate stars analysed: 27
+- Candidate levels:
+  - weak: 12
+  - moderate: 9
+  - strong: 6
+- Candidate score distribution:
+  - score 0: 4
+  - score 1: 8
+  - score 2: 7
+  - score 3: 2
+  - score 4: 3
+  - score 5: 3
+
+### Diagnostic statistics
+
+- Median candidate [Fe/H]: -0.951
+- Minimum candidate [Fe/H]: -2.213
+- Maximum candidate [Fe/H]: -0.534
+- Median candidate tangential velocity: 197.414 km/s
+- Maximum candidate tangential velocity: 426.686 km/s
+- Median candidate Galactocentric total velocity: 157.611 km/s
+- Maximum candidate Galactocentric total velocity: 393.357 km/s
+
+### Outputs
+
+- `notebooks/06_candidate_level_diagnostics.ipynb`
+- `data/processed/gaia_lamost_candidate_diagnostic_table.csv`
+- `data/processed/gaia_lamost_candidate_summary_table.csv`
+- `data/processed/gaia_lamost_candidate_summary_table.md`
+- `figures/gaia_lamost_candidate_cmd_highlight.png`
+- `figures/gaia_lamost_candidate_velocity_diagnostics.png`
+- `figures/gaia_lamost_candidate_metallicity_distribution.png`
+
+### Notes
+
+The candidate levels introduced in this milestone are diagnostic prioritization labels rather than final astrophysical classifications. They are based on simple chemo-kinematic criteria, mainly metallicity, tangential velocity, and Galactocentric total velocity. These labels help identify stars that may be worth closer inspection in later interpretation, visualization, and comparison with known Galactic components such as the disk, stellar halo, and possible accreted structures.
