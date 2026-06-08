@@ -759,3 +759,20 @@ The candidate levels introduced in this milestone are diagnostic prioritization 
 - Documented key limitations, including sample size, survey-selection effects, measurement uncertainties, cross-match reliability, and the absence of full orbital analysis.
 - Added a transition section explaining how Project 1 motivates a larger and more robust Project 2 analysis.
 
+
+## Project 1 Final Packaging - README and Final Report Draft
+
+Project 1 has entered the final packaging stage.
+
+Completed in this stage:
+- Rewrote the repository README into a public-facing project showcase version.
+- Added a Project 1 final report draft under `report/`.
+- Clarified the project scope as a proof-of-concept Gaia–LAMOST Galactic archaeology pipeline.
+- Summarized the completed milestones from Gaia DR3 querying to scientific interpretation.
+- Added limitations and future-work sections to avoid overstating discovery claims.
+
+Scientific positioning:
+- The current Project 1 output is not presented as a definitive stellar-population discovery.
+- The main value is a reproducible, interpretable pipeline combining Gaia astrometry/photometry and LAMOST spectroscopy.
+- The project is now suitable for GitHub presentation, RA outreach, and later expansion into Project 2.
+
