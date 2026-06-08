@@ -650,3 +650,53 @@ Next milestone direction:
 - Explore UMAP / HDBSCAN clustering
 - Compare candidates with known Milky Way stellar populations
 - Prepare report-ready figures and write-up
+
+## Milestone 5: Formal Galactic Velocity Construction and Candidate Validation
+
+Completed Milestone 5 by extending the larger Gaia–LAMOST chemo-kinematic feature table with formal Galactocentric velocity diagnostics.
+
+Main work completed:
+
+- Created `notebooks/05_galactic_velocity_candidate_validation.ipynb`
+- Loaded the Milestone 4 larger feature table with 1838 stars and 38 columns
+- Validated required astrometric and radial-velocity input fields
+- Constructed 6D `SkyCoord` objects using Gaia astrometry and LAMOST radial velocities
+- Recomputed Galactic coordinates with `astropy` and confirmed consistency with Milestone 4 `gal_l` and `gal_b`
+- Recorded the default `astropy` Galactocentric frame assumptions
+- Transformed the sample into the Galactocentric frame
+- Extracted Galactocentric Cartesian position and velocity components
+- Computed `galcen_vtot_kms`
+- Saved the velocity-enhanced feature table
+- Extracted and saved the chemo-kinematic candidate table
+- Generated Milestone 5 validation figures
+
+Data products:
+
+- `data/processed/gaia_lamost_larger_velocity_features.csv`
+  - 1838 stars × 47 columns
+- `data/processed/gaia_lamost_larger_chemo_kinematic_candidates.csv`
+  - 27 candidates × 31 columns
+
+Validation figures:
+
+- `figures/gaia_lamost_larger_galcen_velocity_distribution.png`
+- `figures/gaia_lamost_larger_galcen_vx_vy.png`
+- `figures/gaia_lamost_larger_galcen_vtot_vs_feh.png`
+- `figures/gaia_lamost_larger_candidates_vtan_vs_feh.png`
+- `figures/gaia_lamost_larger_candidates_cmd.png`
+- `figures/gaia_lamost_larger_candidates_sky_galactic.png`
+- `figures/gaia_lamost_larger_candidates_rv_distribution.png`
+
+Interpretation:
+
+The Milestone 4 chemo-kinematic candidate sample contains 27 metal-poor high-tangential-velocity candidates. Milestone 5 confirms that these candidates occupy useful diagnostic regions in velocity-metallicity and color-magnitude spaces.
+
+These candidates should be interpreted as possible halo-like chemo-kinematic candidates for further validation, not as confirmed halo stars, confirmed merger debris, or confirmed Galactic substructure members.
+
+Limitations:
+
+- The sample covers a limited LAMOST-compatible sky region
+- The LAMOST sample does not represent a full survey selection function
+- Distances are based on simple parallax inversion
+- Galactocentric velocities depend on the default `astropy` frame assumptions
+- No orbit integration, action-space analysis, or integrals-of-motion analysis has been performed yet
