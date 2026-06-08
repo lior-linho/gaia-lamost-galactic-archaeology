@@ -135,6 +135,6 @@ This repository is part of a larger three-project research portfolio:
 
 ## Author
 
-**Lior Linhe Deng**  
+**Lior Linho**  
 Independent astronomy and scientific computing project  
 Focus: Astrophysics, Data Science, Scientific Computing
