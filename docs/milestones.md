@@ -1,6 +1,10 @@
 # Project Milestones
 
-## Milestone 1: Gaia DR3 Query and Validation
+This project is organized as an umbrella research-oriented project with three connected sub-projects.
+
+## Project I: Gaia–LAMOST Cross-matching and Chemo-kinematic Feature Construction
+
+### Milestone 1: Gaia DR3 Query and Validation
 
 **Goal:**  
 Build the initial Gaia DR3 stellar sample and validate the basic astrometric and photometric fields.
@@ -16,7 +20,7 @@ Build the initial Gaia DR3 stellar sample and validate the basic astrometric and
 
 ---
 
-## Milestone 2: LAMOST Catalogue Exploration and Gaia Cross-match
+### Milestone 2: LAMOST Catalogue Exploration and Gaia Cross-match
 
 **Goal:**  
 Explore LAMOST spectroscopic data and build a Gaia–LAMOST cross-matched sample.
@@ -33,7 +37,7 @@ Explore LAMOST spectroscopic data and build a Gaia–LAMOST cross-matched sample
 
 ---
 
-## Milestone 3: Chemo-kinematic Feature Construction
+### Milestone 3: Chemo-kinematic Feature Construction
 
 **Goal:**  
 Construct physically meaningful features for stellar population analysis.
@@ -50,7 +54,9 @@ Construct physically meaningful features for stellar population analysis.
 
 ---
 
-## Milestone 4: Exploratory Visualization
+## Project II: Unsupervised Stellar Population Discovery
+
+### Milestone 4: Exploratory Visualization
 
 **Goal:**  
 Visualize the Gaia–LAMOST sample in physical, photometric, chemical, and kinematic spaces.
@@ -67,7 +73,7 @@ Visualize the Gaia–LAMOST sample in physical, photometric, chemical, and kinem
 
 ---
 
-## Milestone 5: Machine Learning Exploration
+### Milestone 5: Dimensionality Reduction and Clustering
 
 **Goal:**  
 Apply exploratory machine learning methods to search for possible stellar population structures.
@@ -84,7 +90,25 @@ Apply exploratory machine learning methods to search for possible stellar popula
 
 ---
 
-## Milestone 6: Research-style Report
+## Project III: Interpretable Machine Learning for Galactic Substructure Candidates
+
+### Milestone 6: Candidate Selection Workflow
+
+**Goal:**  
+Develop an interpretable workflow for selecting and analyzing candidate Galactic substructures.
+
+**Planned tasks:**
+
+- Define candidate selection criteria
+- Train or test interpretable feature-based models
+- Analyze feature importance or model explanations
+- Compare selected candidates with astrophysical expectations
+
+**Status:** Planned
+
+---
+
+### Milestone 7: Research-style Report
 
 **Goal:**  
 Write a concise research-style report summarizing the data, methods, figures, limitations, and future work.
