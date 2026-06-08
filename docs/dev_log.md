@@ -751,3 +751,11 @@ Milestone 6 converts the chemo-kinematic candidate list from Milestone 5 into a 
 ### Notes
 
 The candidate levels introduced in this milestone are diagnostic prioritization labels rather than final astrophysical classifications. They are based on simple chemo-kinematic criteria, mainly metallicity, tangential velocity, and Galactocentric total velocity. These labels help identify stars that may be worth closer inspection in later interpretation, visualization, and comparison with known Galactic components such as the disk, stellar halo, and possible accreted structures.
+## Project 1 Milestone 7: Scientific Interpretation Draft
+
+- Added a first scientific interpretation draft for the Project 1 Gaia–LAMOST exploratory analysis.
+- Interpreted the CMD, metallicity structure, velocity-space behavior, candidate stars, and clustering outputs in conservative scientific language.
+- Clarified that current candidate stars should be treated as preliminary chemo-kinematic candidates rather than confirmed accreted-halo or merger-debris members.
+- Documented key limitations, including sample size, survey-selection effects, measurement uncertainties, cross-match reliability, and the absence of full orbital analysis.
+- Added a transition section explaining how Project 1 motivates a larger and more robust Project 2 analysis.
+
