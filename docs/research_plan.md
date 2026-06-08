@@ -1,17 +1,75 @@
 # Research Plan
 
-## Project Direction
+## Umbrella Direction
 
-This project explores Milky Way stellar populations using Gaia DR3 astrometric data and LAMOST spectroscopic data.
+This repository is an umbrella research-oriented project on **data-driven Galactic archaeology** using Gaia DR3 and LAMOST.
 
-The current focus is not to claim a fixed research conclusion, but to build a reproducible scientific workflow for combining large-scale astronomical survey data, constructing physically meaningful features, and exploring stellar population structures.
+The project is not designed as a single isolated notebook. Instead, it is organized as a connected research line with three sub-projects, moving from data construction to exploratory discovery and then to interpretable candidate selection.
 
-## Main Questions
+The current focus is to build a reproducible scientific workflow for combining large-scale astronomical survey data, constructing physically meaningful features, and exploring stellar population structures.
 
-- How can Gaia astrometry and LAMOST spectroscopy be combined into a clean analysis-ready sample?
-- What chemo-kinematic features are useful for separating different stellar populations?
-- Can exploratory visualization and unsupervised learning reveal meaningful structures in the sample?
-- How do metallicity, motion, and stellar parameters relate to possible disk or halo-like populations?
+## Research Line
+
+### Project I: Gaia–LAMOST Cross-matching and Chemo-kinematic Feature Construction
+
+**Goal:**  
+Build a clean Gaia–LAMOST cross-matched sample and construct physically meaningful features for later stellar population analysis.
+
+**Main questions:**
+
+- How can Gaia DR3 astrometry and LAMOST spectroscopy be combined into a clean analysis-ready sample?
+- What quality checks are needed for cross-matched sources?
+- Which astrometric, kinematic, chemical, and stellar-parameter features are useful for downstream analysis?
+
+**Expected outputs:**
+
+- Gaia DR3 sample validation
+- LAMOST catalogue exploration
+- Gaia–LAMOST cross-matched sample
+- Chemo-kinematic feature table
+- Basic validation figures
+
+---
+
+### Project II: Unsupervised Stellar Population Discovery
+
+**Goal:**  
+Use visualization, dimensionality reduction, and clustering methods to explore possible stellar population structures in the Gaia–LAMOST feature space.
+
+**Main questions:**
+
+- Can exploratory visualization reveal separations between different stellar populations?
+- How do metallicity, motion, and stellar parameters relate to disk-like or halo-like populations?
+- Can unsupervised learning methods reveal meaningful structures without predefined labels?
+
+**Expected outputs:**
+
+- Color-magnitude and chemo-kinematic visualizations
+- Feature-space projections
+- Clustering experiments
+- Initial interpretation of possible stellar population groups
+
+---
+
+### Project III: Interpretable Machine Learning for Galactic Substructure Candidates
+
+**Goal:**  
+Develop interpretable machine learning workflows for identifying and analyzing candidate Galactic substructures.
+
+**Main questions:**
+
+- Can candidate stellar groups be selected using interpretable feature-based models?
+- Which features contribute most strongly to possible population separation?
+- How can machine learning outputs be connected back to astrophysical interpretation?
+
+**Expected outputs:**
+
+- Candidate selection workflow
+- Interpretable model experiments
+- Feature importance or explanation analysis
+- Research-style discussion of limitations and future work
+
+---
 
 ## Planned Milestones
 
