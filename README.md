@@ -1,12 +1,23 @@
-# Gaia–LAMOST Galactic Archaeology Project
+# Data-driven Galactic Archaeology with Gaia DR3 and LAMOST
 
-Research-oriented project exploring Milky Way stellar populations using **Gaia DR3** astrometry and **LAMOST** spectroscopy.
+This repository is an umbrella research-oriented project exploring Milky Way stellar populations using **Gaia DR3** astrometry and **LAMOST** spectroscopy.
+
+The project is organized into three connected sub-projects:
+
+1. **Gaia–LAMOST Cross-matching and Chemo-kinematic Feature Construction**  
+   Building a clean Gaia–LAMOST cross-matched sample and constructing physically meaningful astrometric, kinematic, chemical, and stellar-parameter features.
+
+2. **Unsupervised Stellar Population Discovery**  
+   Applying exploratory visualization, dimensionality reduction, and clustering methods to search for possible stellar population structures.
+
+3. **Interpretable Machine Learning for Galactic Substructure Candidates**  
+   Developing interpretable models and selection workflows for identifying and analyzing candidate Galactic substructures.
 
 ## Overview
 
 This project combines astrometric, photometric, kinematic, and spectroscopic information from large-scale astronomical surveys to study the chemo-dynamical structure of Milky Way stellar populations.
 
-The current goal is to build a clean Gaia–LAMOST cross-matched sample, construct physically meaningful features, and prepare the dataset for exploratory visualization and machine learning analysis.
+The current stage focuses on **Project I**, including Gaia DR3 sample validation, LAMOST catalogue exploration, cross-matching, and chemo-kinematic feature construction.
 
 ## Data
 
