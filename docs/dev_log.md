@@ -894,3 +894,37 @@ Generated outputs:
 Scientific interpretation principle:
 
 PCA is used as a baseline embedding and diagnostic tool. Project 1 candidate flags are used only for post-hoc interpretation and are not used as training labels. Any separation in PCA space should be interpreted as feature-space structure rather than confirmed astrophysical substructure.
+
+## Project 2 Milestone 3: UMAP Nonlinear Embedding and Candidate Structure Exploration
+
+Project 2 Milestone 3 applied UMAP to the combined Gaia–LAMOST chemo-kinematic feature space.
+
+This milestone was motivated by the Project 2 PCA baseline, where many Project 1 chemo-kinematic candidates appeared outside the dense main stellar locus. UMAP was used to test whether nonlinear embedding reveals clearer local structure among candidate stars and the main stellar population.
+
+Primary input table:
+
+- `data/processed/gaia_lamost_larger_velocity_features.csv`
+
+Feature space used:
+
+- `feh`
+- `bp_rp`
+- `absolute_g_mag`
+- `tangential_velocity_kms`
+- `rv`
+- `galcen_vx_kms`
+- `galcen_vy_kms`
+- `galcen_vz_kms`
+- `galcen_vtot_kms`
+
+Generated outputs:
+
+- `notebooks/09_project2_umap_embedding.ipynb`
+- `data/processed/project2_combined_chemo_kinematic_umap_embedding.csv`
+- `figures/project2_umap_combined_chemo_kinematic_by_feh.png`
+- `figures/project2_umap_combined_chemo_kinematic_by_vtot.png`
+- `figures/project2_umap_combined_chemo_kinematic_candidates.png`
+
+Scientific interpretation principle:
+
+UMAP is used as an exploratory nonlinear embedding method. Candidate flags from Project 1 are used only for post-hoc interpretation. Visual grouping in UMAP space should not be interpreted as confirmed Galactic substructure without further clustering and astrophysical validation.
