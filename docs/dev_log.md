@@ -776,3 +776,21 @@ Scientific positioning:
 - The main value is a reproducible, interpretable pipeline combining Gaia astrometry/photometry and LAMOST spectroscopy.
 - The project is now suitable for GitHub presentation, RA outreach, and later expansion into Project 2.
 
+
+## Project 1 Final Polish
+
+Project 1 final polish was completed after the final packaging stage.
+
+This stage focused on improving the repository-level presentation rather than changing the scientific analysis or restructuring the directory layout. The main README was updated to clearly describe the research motivation, Gaia–LAMOST data combination, Project 1 workflow, main outputs, scientific interpretation, current limitations, and planned next stages.
+
+The repository remains intentionally flat at this stage. A future restructuring into separate project folders will be considered only after Project 2 and Project 3 are developed.
+
+Final polish scope:
+
+- refined the top-level README for external readers
+- clarified that Project 1 is complete
+- emphasized the exploratory nature of the current candidate selection
+- documented current limitations and future directions
+- kept notebooks, figures, data products, and directory layout unchanged
+
+Project 1 is now in a presentable portfolio state for research outreach, RA applications, and later multi-project expansion.

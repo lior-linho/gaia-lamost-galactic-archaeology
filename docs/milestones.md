@@ -124,3 +124,32 @@ Write a concise research-style report summarizing the data, methods, figures, li
 - Future work
 
 **Status:** Planned
+
+## Project 1 Completion Status
+
+Project 1 has been completed and polished for presentation.
+
+Completed stages:
+
+- Milestone 1: Gaia DR3 sample query and validation
+- Milestone 2: LAMOST catalogue exploration and Gaia–LAMOST cross-match
+- Milestone 3: chemo-kinematic feature construction
+- Milestone 4: larger Gaia–LAMOST sample preparation
+- Milestone 5: velocity and candidate diagnostics
+- Milestone 6: candidate-level validation
+- Milestone 7: scientific interpretation draft
+- Final Packaging: repository-level organization and final report draft
+- Final Polish: README, documentation, and presentation refinement
+
+Project 1 deliverables:
+
+- reproducible Jupyter notebook workflow
+- processed Gaia–LAMOST data products
+- diagnostic figures for photometric, chemical, and kinematic analysis
+- candidate-level diagnostic visualizations
+- final report draft
+- documented limitations and future research directions
+
+Project 1 is now considered complete as a standalone research portfolio project.
+
+The next major stage will be Project 2, focusing on machine-learning assisted stellar population clustering and stronger statistical interpretation.
