@@ -863,3 +863,34 @@ Initial methods to evaluate:
 - Gaussian Mixture Models as a comparison method
 
 Milestone 1 is limited to research design and feature-space definition. Full clustering experiments will be developed in later Project 2 milestones.
+
+## Project 2 Milestone 2: PCA Baseline Embedding and Diagnostic Visualization
+
+Project 2 Milestone 2 introduced a transparent PCA baseline for the larger Gaia–LAMOST feature table.
+
+The goal of this milestone was to evaluate whether simple linear dimensionality reduction reveals interpretable structure in the Project 2 feature spaces before applying nonlinear embedding or clustering methods.
+
+Primary input table:
+
+- `data/processed/gaia_lamost_larger_velocity_features.csv`
+
+Feature spaces evaluated:
+
+- photometric_astrometric
+- chemical_stellar
+- local_kinematic
+- galactocentric_velocity
+- combined_chemo_kinematic
+
+Generated outputs:
+
+- `notebooks/08_project2_pca_baseline_embedding.ipynb`
+- `data/processed/project2_pca_explained_variance_summary.csv`
+- `data/processed/project2_combined_chemo_kinematic_pca_embedding.csv`
+- `figures/project2_pca_combined_chemo_kinematic_by_feh.png`
+- `figures/project2_pca_combined_chemo_kinematic_by_vtot.png`
+- `figures/project2_pca_combined_chemo_kinematic_candidates.png`
+
+Scientific interpretation principle:
+
+PCA is used as a baseline embedding and diagnostic tool. Project 1 candidate flags are used only for post-hoc interpretation and are not used as training labels. Any separation in PCA space should be interpreted as feature-space structure rather than confirmed astrophysical substructure.

@@ -1,0 +1,6 @@
+feature_space,n_rows,n_features,features,pc1_explained_variance_ratio,pc2_explained_variance_ratio,pc3_explained_variance_ratio,cumulative_explained_variance_ratio
+photometric_astrometric,1838,5,"bp_rp, absolute_g_mag, distance_pc, pm_total, reduced_pm_g",0.5407389896420458,0.21235017802233738,0.1191731919710248,0.872262359635408
+chemical_stellar,1838,3,"feh, teff, logg",0.5401655773314656,0.340511227043896,0.11932319562463833,1.0
+local_kinematic,1838,2,"tangential_velocity_kms, rv",0.6214725400575017,0.37852745994249826,,1.0
+galactocentric_velocity,1838,4,"galcen_vx_kms, galcen_vy_kms, galcen_vz_kms, galcen_vtot_kms",0.4417228139228142,0.2653084794003015,0.23933012591423178,0.9463614192373475
+combined_chemo_kinematic,1838,9,"feh, bp_rp, absolute_g_mag, tangential_velocity_kms, rv, galcen_vx_kms, galcen_vy_kms, galcen_vz_kms, galcen_vtot_kms",0.31976011787703956,0.19285933661487836,0.144321025502259,0.6569404799941769
