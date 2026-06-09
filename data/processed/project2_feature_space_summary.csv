@@ -1,0 +1,6 @@
+feature_space,n_features_defined,n_features_available,missing_columns,complete_rows
+photometric_astrometric,5,5,,1838
+chemical_stellar,3,3,,1838
+local_kinematic,2,2,,1838
+galactocentric_velocity,4,4,,1838
+combined_chemo_kinematic,9,9,,1838

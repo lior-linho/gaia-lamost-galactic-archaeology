@@ -794,3 +794,72 @@ Final polish scope:
 - kept notebooks, figures, data products, and directory layout unchanged
 
 Project 1 is now in a presentable portfolio state for research outreach, RA applications, and later multi-project expansion.
+
+## Project 2 Milestone 1: Research Design and Feature-Space Definition
+
+Project 2 was started after Project 1 final packaging and final polish were completed.
+
+The goal of Project 2 is to move from candidate-level exploratory diagnostics toward machine-learning assisted stellar population clustering. The primary input table selected for Project 2 is:
+
+- `data/processed/gaia_lamost_larger_velocity_features.csv`
+
+This table contains the larger Gaia–LAMOST feature set with astrometric, photometric, spectroscopic, Galactic coordinate, and Galactocentric velocity quantities.
+
+Project 2 research question:
+
+Can unsupervised machine learning recover interpretable stellar population structure from Gaia–LAMOST chemo-kinematic features?
+
+Initial Project 2 design:
+
+- use the larger Gaia–LAMOST velocity-feature table as the baseline dataset
+- define multiple feature spaces for clustering experiments
+- separate physical diagnostic flags from machine-learning input features
+- compare clustering behaviour across photometric, chemical, kinematic, and combined feature spaces
+- avoid treating exploratory clusters as confirmed astrophysical substructures
+- use candidate flags from Project 1 as post-hoc interpretation labels rather than training labels
+
+Planned feature-space groups:
+
+1. Photometric and astrometric space:
+   - `bp_rp`
+   - `absolute_g_mag`
+   - `distance_pc`
+   - `pm_total`
+   - `reduced_pm_g`
+
+2. Chemical and stellar-parameter space:
+   - `feh`
+   - `teff`
+   - `logg`
+
+3. Local kinematic space:
+   - `tangential_velocity_kms`
+   - `rv`
+
+4. Galactocentric velocity space:
+   - `galcen_vx_kms`
+   - `galcen_vy_kms`
+   - `galcen_vz_kms`
+   - `galcen_vtot_kms`
+
+5. Combined chemo-kinematic space:
+   - `feh`
+   - `bp_rp`
+   - `absolute_g_mag`
+   - `tangential_velocity_kms`
+   - `rv`
+   - `galcen_vx_kms`
+   - `galcen_vy_kms`
+   - `galcen_vz_kms`
+   - `galcen_vtot_kms`
+
+Initial methods to evaluate:
+
+- missing-value filtering
+- robust feature scaling
+- PCA for baseline dimensionality reduction
+- UMAP for nonlinear visualization
+- DBSCAN or HDBSCAN for density-based clustering
+- Gaussian Mixture Models as a comparison method
+
+Milestone 1 is limited to research design and feature-space definition. Full clustering experiments will be developed in later Project 2 milestones.

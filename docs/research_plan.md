@@ -102,3 +102,59 @@ Summarize the data, methods, figures, limitations, and possible interpretations 
 The expected outcome is a reproducible undergraduate-level research portfolio project with clean documentation, visual outputs, reusable code, and a written report.
 
 The project is designed as a foundation for future research opportunities in physics, astronomy, scientific computing, or data-driven science.
+
+## Project 2: Machine-learning Assisted Stellar Population Clustering
+
+Project 2 extends Project 1 from exploratory candidate diagnostics toward unsupervised stellar population clustering.
+
+### Scientific Aim
+
+The scientific aim is to test whether Gaia–LAMOST chemo-kinematic feature spaces contain interpretable stellar population structure that can be recovered using unsupervised machine-learning methods.
+
+### Primary Input Dataset
+
+The primary input dataset is:
+
+- `data/processed/gaia_lamost_larger_velocity_features.csv`
+
+This table is selected because it combines:
+
+- Gaia astrometry and photometry
+- LAMOST stellar parameters and radial velocity
+- derived photometric and tangential-velocity features
+- Galactic coordinates
+- Galactocentric position and velocity features
+- Project 1 candidate flags for later interpretation
+
+### Research Question
+
+Can unsupervised machine learning recover interpretable stellar population structure from Gaia–LAMOST chemo-kinematic features?
+
+### Working Hypothesis
+
+A combined chemo-kinematic feature space may separate disk-like stars, metal-poor or high-velocity candidates, and possible dynamically distinct objects more clearly than photometric or chemical features alone.
+
+### Methodological Principle
+
+Project 1 candidate flags should not be used as clustering labels. They should be reserved for post-hoc interpretation of clusters or outliers.
+
+### Planned Feature Spaces
+
+- photometric-astrometric feature space
+- chemical and stellar-parameter feature space
+- local kinematic feature space
+- Galactocentric velocity feature space
+- combined chemo-kinematic feature space
+
+### Planned Methods
+
+- StandardScaler or RobustScaler
+- PCA
+- UMAP
+- DBSCAN or HDBSCAN
+- Gaussian Mixture Models
+- cluster interpretation using CMD, metallicity, velocity, and candidate-score diagnostics
+
+### Scientific Caution
+
+Any clusters found in Project 2 should be interpreted as exploratory structures in feature space, not as confirmed stellar streams, merger debris, or new Galactic substructures without further validation.
