@@ -928,3 +928,29 @@ Generated outputs:
 Scientific interpretation principle:
 
 UMAP is used as an exploratory nonlinear embedding method. Candidate flags from Project 1 are used only for post-hoc interpretation. Visual grouping in UMAP space should not be interpreted as confirmed Galactic substructure without further clustering and astrophysical validation.
+
+## Project 2 Milestone 4: DBSCAN Baseline Clustering
+
+Project 2 Milestone 4 introduced DBSCAN as a baseline density-based clustering method on the PCA and UMAP embeddings generated in Milestones 2 and 3.
+
+The goal of this milestone is to test whether candidate-rich regions seen in PCA and UMAP diagnostic plots can be identified by an unsupervised clustering method.
+
+Primary inputs:
+
+- `data/processed/project2_combined_chemo_kinematic_pca_embedding.csv`
+- `data/processed/project2_combined_chemo_kinematic_umap_embedding.csv`
+
+Generated outputs:
+
+- `notebooks/10_project2_dbscan_baseline_clustering.ipynb`
+- `data/processed/project2_dbscan_parameter_grid_summary.csv`
+- `data/processed/project2_pca_dbscan_labels_baseline.csv`
+- `data/processed/project2_umap_dbscan_labels_baseline.csv`
+- `data/processed/project2_dbscan_cluster_summary_baseline.csv`
+- `figures/project2_umap_dbscan_clusters.png`
+- `figures/project2_umap_dbscan_candidate_overlay.png`
+- `figures/project2_pca_dbscan_candidate_overlay.png`
+
+Scientific interpretation principle:
+
+DBSCAN labels are treated as exploratory feature-space groupings. Candidate enrichment in a DBSCAN cluster is useful as a diagnostic, but it does not by itself confirm a distinct astrophysical population.
