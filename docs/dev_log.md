@@ -954,3 +954,39 @@ Generated outputs:
 Scientific interpretation principle:
 
 DBSCAN labels are treated as exploratory feature-space groupings. Candidate enrichment in a DBSCAN cluster is useful as a diagnostic, but it does not by itself confirm a distinct astrophysical population.
+
+## Project 2 Milestone 5: DBSCAN Small-Grid Robustness Check
+
+Project 2 Milestone 5 tested whether the candidate-enriched DBSCAN outlier behavior observed in Milestone 4 remains stable under small changes to DBSCAN parameters.
+
+The analysis used the PCA and UMAP embedding tables generated in earlier Project 2 milestones:
+
+- `data/processed/project2_combined_chemo_kinematic_pca_embedding.csv`
+- `data/processed/project2_combined_chemo_kinematic_umap_embedding.csv`
+
+A small DBSCAN parameter grid was evaluated:
+
+- `eps`: 0.20, 0.25, 0.30
+- `min_samples`: 5, 8, 12
+
+For each parameter setting, the DBSCAN noise/outlier population was summarized by:
+
+- number of noise points
+- noise fraction
+- number of Project 1 chemo-kinematic candidates in the noise population
+- candidate fraction within the noise population
+- mean metallicity
+- mean Galactocentric total velocity
+
+Generated outputs:
+
+- `notebooks/11_project2_dbscan_robustness_analysis.ipynb`
+- `data/processed/project2_dbscan_small_parameter_sweep_summary.csv`
+
+Main interpretation:
+
+The PCA small-grid sweep shows a stable candidate-rich outlier population. Across the tested PCA DBSCAN settings, 24–25 of the 27 Project 1 candidates are repeatedly assigned to the noise/outlier population.
+
+The same behavior is not reproduced in the UMAP small-grid sweep. Under the same parameter choices, UMAP DBSCAN assigns almost all stars to one large cluster, leaving only 0–2 stars as noise and 0–1 Project 1 candidates in the noise population.
+
+This suggests that the candidate-rich outlier behavior is more visible in the PCA-projected global feature space than in the current UMAP local-neighborhood embedding. This is interpreted as feature-space evidence, not confirmation of a distinct astrophysical population.
