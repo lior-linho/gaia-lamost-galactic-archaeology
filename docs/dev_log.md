@@ -1062,3 +1062,23 @@ The Project 2 candidates should be interpreted as evidence-ranked follow-up targ
 ### Next step
 
 Project 3 should move from embedding-level and clustering-level evidence toward orbital characterization and comparison with known Milky Way substructures.
+
+## Project 3 Milestone 1: Orbital Characterization Setup
+
+- Started Project 3 after Project 2 final packaging.
+- Confirmed repository state before starting:
+  - branch: `main`
+  - latest commit: `a180886 Add Project 2 scientific interpretation and final packaging`
+  - working tree: clean
+  - remote: `lior-linho/gaia-lamost-galactic-archaeology`
+- Identified Project 3 primary inputs:
+  - `data/processed/project2_candidate_cross_method_summary.csv`
+  - `data/processed/gaia_lamost_candidate_summary_table.csv`
+- Defined the orbital characterization feature plan:
+  - astrometric inputs
+  - radial-velocity and tangential-velocity inputs
+  - Galactocentric velocity features
+  - orbital parameters such as eccentricity, pericenter, apocenter, Zmax, and Lz
+  - quality-control requirements before full orbit integration
+- Added Project 3 Milestone 1 setup report:
+  - `report/project3_milestone1_orbital_characterization_setup.md`

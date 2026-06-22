@@ -52,3 +52,8 @@ Project 2 includes one main final packaging report:
 This report summarizes the machine-learning assisted candidate-prioritization workflow developed after Project 1. It covers feature-space design, PCA baseline diagnostics, UMAP nonlinear embeddings, DBSCAN baseline clustering, DBSCAN robustness checks, and candidate-level cross-method evidence integration.
 
 Project 2 should be read as an exploratory but reproducible machine-learning extension of the Gaia–LAMOST workflow. It does not claim a definitive discovery of a new Galactic substructure. Instead, it identifies evidence-ranked chemo-dynamical follow-up targets that can be tested more rigorously in Project 3 through orbital characterization and comparison with known Milky Way substructures.
+
+## Project 3 reports
+
+- `project3_milestone1_orbital_characterization_setup.md`  
+  Defines the Project 3 orbit-analysis setup, candidate inputs, required orbital features, quality-control checks, and the Milestone 2 orbit-input preparation plan.
