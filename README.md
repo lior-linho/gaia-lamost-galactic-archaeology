@@ -2,7 +2,7 @@
 
 **Machine Learning Assisted Chemo-Dynamical Analysis of Milky Way Stellar Populations Using Gaia DR3 and LAMOST**
 
-This repository contains Project 1 of a broader Gaia–LAMOST Galactic Archaeology research portfolio. The goal of Project 1 is to build a reproducible proof-of-concept pipeline that combines Gaia DR3 astrometry and photometry with LAMOST spectroscopic stellar parameters, then uses chemo-kinematic features to explore Milky Way stellar populations.
+This repository contains the first two stages of a broader Gaia–LAMOST Galactic Archaeology research portfolio. Project 1 builds a reproducible proof-of-concept pipeline that combines Gaia DR3 astrometry and photometry with LAMOST spectroscopic stellar parameters. Project 2 extends this workflow with machine-learning assisted feature-space design, dimensionality reduction, density-based clustering, robustness checks, and candidate-level cross-method evidence summaries.
 
 This project is intended as a research portfolio project for computational astrophysics, data-driven astronomy, and scientific computing.
 
@@ -10,7 +10,9 @@ This project is intended as a research portfolio project for computational astro
 
 Galactic archaeology studies the formation history of the Milky Way by analyzing the spatial, kinematic, and chemical properties of stars. Gaia provides precise astrometry and photometry, while LAMOST provides large-scale spectroscopic stellar parameters such as radial velocity, effective temperature, surface gravity, and metallicity.
 
-Project 1 builds a compact but complete workflow:
+The current repository contains two completed stages:
+
+**Project 1: Gaia–LAMOST chemo-kinematic pipeline**
 
 1. Query and validate a Gaia DR3 stellar sample.
 2. Explore LAMOST DR9 low-resolution catalogues.
@@ -20,6 +22,16 @@ Project 1 builds a compact but complete workflow:
 6. Validate candidate stars using velocity, metallicity, and CMD diagnostics.
 7. Write a scientific interpretation draft and final report.
 8. Polish the repository into a public-facing research showcase.
+
+**Project 2: Machine-learning assisted candidate prioritization**
+
+1. Define multiple chemo-dynamical feature spaces.
+2. Build PCA baseline embeddings.
+3. Build UMAP nonlinear embedding diagnostics.
+4. Apply DBSCAN clustering to PCA and UMAP spaces.
+5. Test DBSCAN robustness across parameter choices.
+6. Integrate candidate-level evidence across PCA, UMAP, DBSCAN, metallicity, velocity, and Project 1 labels.
+7. Package the scientific interpretation and final Project 2 summary.
 
 ## Research Question
 
@@ -54,6 +66,24 @@ Project 1 is complete and polished for presentation.
 
 This repository is currently kept in a flat project structure. Directory restructuring into separate `project1/`, `project2/`, and `project3/` folders is intentionally postponed until the later multi-project stage.
 
+## Project 2 Status
+
+Project 2 is complete and packaged for presentation.
+
+| Milestone | Focus | Status |
+|---|---|---|
+| M1 | Feature-space design for unsupervised analysis | Completed |
+| M2 | PCA baseline embedding diagnostics | Completed |
+| M3 | UMAP nonlinear embedding diagnostics | Completed |
+| M4 | DBSCAN baseline clustering | Completed |
+| M5 | DBSCAN robustness analysis | Completed |
+| M6 | Candidate cross-method evidence summary | Completed |
+| M7 | Scientific interpretation and final packaging | Completed |
+
+Project 2 should be interpreted as a machine-learning assisted candidate-prioritization stage. It does not claim a definitive discovery of a new stellar population. Instead, it ranks candidate stars by how consistently they appear interesting across physical diagnostics, embedding views, clustering outputs, and cross-method evidence summaries.
+
+
+
 ## Repository Structure
 
     data/
@@ -76,10 +106,17 @@ This repository is currently kept in a flat project structure. Directory restruc
       04_larger_sample_kinematic_preparation.ipynb
       05_galactic_velocity_candidate_validation.ipynb
       06_candidate_level_diagnostics.ipynb
+      07_project2_feature_space_design.ipynb
+      08_project2_pca_baseline_embedding.ipynb
+      09_project2_umap_embedding.ipynb
+      10_project2_dbscan_baseline_clustering.ipynb
+      11_project2_dbscan_robustness_analysis.ipynb
+      12_project2_candidate_cross_method_summary.ipynb
 
     report/
       project1_milestone7_scientific_interpretation_draft.md
       project1_final_report_draft.md
+      project2_scientific_interpretation_and_final_packaging.md
 
     src/
       Reserved for reusable source code modules in later stages
@@ -94,6 +131,10 @@ Key generated outputs include:
 - Larger Gaia–LAMOST candidate sample.
 - Diagnostic figures, including CMDs, metallicity distributions, reduced proper motion diagrams, tangential velocity plots, radial velocity diagnostics, and Galactocentric velocity visualizations.
 - Candidate-level diagnostic visualizations.
+- PCA and UMAP embedding diagnostics for Project 2.
+- DBSCAN baseline and robustness summaries.
+- Candidate-level cross-method evidence table.
+- Project 2 scientific interpretation and final packaging report.
 - Scientific interpretation draft.
 - Project 1 final report draft.
 
@@ -123,9 +164,11 @@ Exploratory clustering, physically motivated thresholds, and diagnostic visualiz
 
 Project 1 does not claim a definitive discovery of new stellar substructure. Instead, it demonstrates a reproducible analysis pipeline for selecting and interpreting candidate stars with unusual chemo-kinematic properties.
 
+Project 2 extends this interpretation by testing whether the Project 1 candidates remain visible under multiple unsupervised views of the same Gaia–LAMOST feature space. PCA, UMAP, DBSCAN, robustness checks, and candidate-level cross-method summaries are used to rank candidates by evidence consistency.
+
 The current candidate selection should be interpreted as exploratory. The results are useful for identifying objects and regions of parameter space that may deserve deeper analysis in later projects.
 
-The most important outcome is not a discovery claim, but a reproducible framework that can be scaled to larger Gaia–LAMOST samples in Project 2 and extended with more rigorous population modelling in Project 3.
+The most important outcome is not a discovery claim, but a reproducible framework that can be scaled to larger Gaia–LAMOST samples and extended with more rigorous orbital modelling and literature-level comparison in Project 3.
 
 ## Limitations
 
@@ -142,12 +185,13 @@ These limitations motivate the next stages of the larger Gaia–LAMOST Galactic 
 
 ## Planned Next Stages
 
-Future work will extend this repository into a broader multi-project research sequence:
+Project 1 and Project 2 are complete as exploratory research-portfolio stages.
 
-- **Project 2**: Machine-learning assisted stellar population clustering.
+Future work will extend this repository into the next stage of the broader research sequence:
+
 - **Project 3**: Orbital characterization and literature-level comparison with known Galactic substructures.
 
-The eventual goal is to build a stronger research portfolio project that connects astronomical catalogue analysis, machine learning, and Galactic archaeology.
+The eventual goal is to build a stronger research portfolio project that connects astronomical catalogue analysis, machine learning, orbital dynamics, and Galactic archaeology.
 
 ## Tools and Libraries
 

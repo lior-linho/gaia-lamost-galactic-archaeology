@@ -990,3 +990,75 @@ The PCA small-grid sweep shows a stable candidate-rich outlier population. Acros
 The same behavior is not reproduced in the UMAP small-grid sweep. Under the same parameter choices, UMAP DBSCAN assigns almost all stars to one large cluster, leaving only 0–2 stars as noise and 0–1 Project 1 candidates in the noise population.
 
 This suggests that the candidate-rich outlier behavior is more visible in the PCA-projected global feature space than in the current UMAP local-neighborhood embedding. This is interpreted as feature-space evidence, not confirmation of a distinct astrophysical population.
+
+
+## 2026-06-22
+
+### Project 2 Milestone 7: Scientific Interpretation and Final Packaging
+
+Completed the final packaging stage for Project 2 of the Gaia–LAMOST Galactic Archaeology Project.
+
+Project 2 extends the Project 1 chemo-kinematic candidate workflow with machine-learning assisted feature-space analysis. The purpose of Project 2 is to test whether candidate stars identified by physical diagnostics remain notable under multiple unsupervised views of the Gaia–LAMOST feature space.
+
+### Completed Project 2 method chain
+
+Project 2 now consists of the following completed milestones:
+
+```text
+M1  Feature-space design
+M2  PCA baseline embedding diagnostics
+M3  UMAP nonlinear embedding diagnostics
+M4  DBSCAN baseline clustering
+M5  DBSCAN robustness analysis
+M6  Candidate cross-method evidence summary
+M7  Scientific interpretation and final packaging
+```
+
+### Final interpretation
+
+The main Project 2 interpretation is intentionally cautious.
+
+The candidate stars are not presented as confirmed members of a newly discovered Galactic substructure. Instead, they are interpreted as evidence-ranked chemo-dynamical follow-up targets.
+
+A candidate is considered more interesting when it receives support from multiple views, including:
+
+- metallicity diagnostics
+- velocity diagnostics
+- PCA embedding position
+- UMAP embedding position
+- DBSCAN cluster or noise behavior
+- robustness across DBSCAN parameter choices
+- previous Project 1 candidate labels
+- Project 2 cross-method evidence summary
+
+### Files added or updated
+
+Added:
+
+```text
+report/project2_scientific_interpretation_and_final_packaging.md
+```
+
+Updated:
+
+```text
+README.md
+report/README.md
+notebooks/README.md
+figures/README.md
+docs/dev_log.md
+```
+
+### Main scientific conclusion
+
+Project 2 demonstrates a reproducible machine-learning assisted candidate-prioritization workflow for Gaia–LAMOST Galactic archaeology.
+
+The strongest conclusion is:
+
+```text
+The Project 2 candidates should be interpreted as evidence-ranked follow-up targets, not as confirmed members of a new stellar population.
+```
+
+### Next step
+
+Project 3 should move from embedding-level and clustering-level evidence toward orbital characterization and comparison with known Milky Way substructures.

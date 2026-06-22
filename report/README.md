@@ -41,3 +41,14 @@ The Milestone 7 scientific interpretation draft records the interpretation stage
 Project 1 should be read as an exploratory but reproducible research portfolio project. The current reports do not claim a definitive discovery of new Galactic substructure. Instead, they demonstrate a complete workflow for combining Gaia astrometry and photometry with LAMOST spectroscopy to identify and interpret candidate chemo-kinematic outliers.
 
 Future reports for Project 2 and Project 3 will build on this foundation with machine-learning clustering, stronger population classification, orbital analysis, and comparison with known Galactic substructures.
+
+
+## Project 2 Report Status
+
+Project 2 includes one main final packaging report:
+
+- `project2_scientific_interpretation_and_final_packaging.md`
+
+This report summarizes the machine-learning assisted candidate-prioritization workflow developed after Project 1. It covers feature-space design, PCA baseline diagnostics, UMAP nonlinear embeddings, DBSCAN baseline clustering, DBSCAN robustness checks, and candidate-level cross-method evidence integration.
+
+Project 2 should be read as an exploratory but reproducible machine-learning extension of the Gaia–LAMOST workflow. It does not claim a definitive discovery of a new Galactic substructure. Instead, it identifies evidence-ranked chemo-dynamical follow-up targets that can be tested more rigorously in Project 3 through orbital characterization and comparison with known Milky Way substructures.
