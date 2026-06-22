@@ -1,0 +1,13 @@
+metric,n,mean,median,std,min,max,section
+Lx_kpc_kms,27,19.472524013741392,-2.3935086017419565,227.04525750248527,-603.4636403959573,371.5487434311632,angular_momentum_metrics
+Ly_kpc_kms,27,-407.1858917156369,-202.8527102437328,856.9573653143284,-3516.9797387714198,832.1243907250436,angular_momentum_metrics
+Lz_kpc_kms,27,-501.9155000293094,-320.50892591999315,1313.0403672865755,-3824.068567730971,2417.299615178472,angular_momentum_metrics
+Lperp_kpc_kms,27,677.7337588516688,556.6877339471747,693.9072026821356,37.141077503191404,3531.4575141993287,angular_momentum_metrics
+Ltot_kpc_kms,27,1321.3014357913214,1129.9009530253095,1063.5764284857978,160.59738261570232,3862.1094626961676,angular_momentum_metrics
+retrograde / low_Lperp,9,,,,,,classification_counts
+low_Lz_or_radial / low_Lperp,7,,,,,,classification_counts
+low_Lz_or_radial / moderate_Lperp,4,,,,,,classification_counts
+prograde / low_Lperp,3,,,,,,classification_counts
+retrograde / moderate_Lperp,2,,,,,,classification_counts
+prograde / high_Lperp,1,,,,,,classification_counts
+retrograde / high_Lperp,1,,,,,,classification_counts
