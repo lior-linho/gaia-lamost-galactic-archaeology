@@ -57,3 +57,7 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project3_milestone1_orbital_characterization_setup.md`  
   Defines the Project 3 orbit-analysis setup, candidate inputs, required orbital features, quality-control checks, and the Milestone 2 orbit-input preparation plan.
+
+- `project3_milestone2_orbit_input_preparation.md` — prepares the candidate-level orbit input table and summarizes orbit-readiness based on astrometric, radial-velocity, and Galactocentric velocity fields.
+
+

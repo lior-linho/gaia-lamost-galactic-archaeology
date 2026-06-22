@@ -1082,3 +1082,15 @@ Project 3 should move from embedding-level and clustering-level evidence toward 
   - quality-control requirements before full orbit integration
 - Added Project 3 Milestone 1 setup report:
   - `report/project3_milestone1_orbital_characterization_setup.md`
+
+## Project 3 Milestone 2 — Orbit Input Preparation
+
+Prepared the candidate-level orbit input table for downstream orbital characterization.
+
+Changes:
+- Used the Project 2 cross-method candidate summary as the main candidate-level input table.
+- Checked availability of core orbit-input fields including `ra`, `dec`, `parallax`, `pmra`, `pmdec`, `radial_velocity`, `galcen_vx`, `galcen_vy`, and `galcen_vz`.
+- Generated `data/processed/project3_orbit_input_candidates.csv`.
+- Added an orbit-readiness summary in `report/project3_milestone2_orbit_input_preparation.md`.
+
+This milestone does not perform orbit integration yet. It establishes a clean, auditable input table for the next orbital characterization step.
