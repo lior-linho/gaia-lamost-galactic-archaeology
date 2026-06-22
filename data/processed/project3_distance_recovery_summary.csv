@@ -1,0 +1,2 @@
+n_candidates,n_with_recovered_parallax,n_with_positive_parallax,n_with_inverse_parallax_distance,n_basic_angular_momentum_ready,recovery_source,merge_key
+27,0,0,0,0,gaia_lamost_larger_velocity_features.csv,source_id
