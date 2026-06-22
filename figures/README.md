@@ -53,3 +53,8 @@ project2_candidate_cross_method_evidence_summary.png
 These figures should be interpreted as diagnostic visualizations for candidate prioritization. PCA and UMAP show how candidate stars appear in different embedding spaces, while DBSCAN overlays and cross-method evidence plots summarize whether candidates remain interesting across multiple unsupervised views.
 
 The figures are not standalone discovery evidence. They are supporting diagnostics for the Project 2 scientific interpretation and final packaging report.
+
+- `project3_orbital_diagnostics_velocity_summary.png` — Project 3 velocity-space diagnostic plot comparing tangential velocity and Galactocentric total velocity.
+- `project3_orbital_diagnostics_feh_velocity.png` — Project 3 metallicity versus Galactocentric total velocity diagnostic plot.
+- `project3_orbital_diagnostics_readiness_summary.png` — Project 3 orbital-readiness summary showing available velocity inputs and missing angular-momentum position inputs.
+

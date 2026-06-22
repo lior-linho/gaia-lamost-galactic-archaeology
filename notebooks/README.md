@@ -51,3 +51,6 @@ Each notebook should include:
 - comments explaining important steps
 - saved outputs when relevant
 - links to related milestone notes, reports, or figures
+
+- `14_project3_orbital_diagnostics_preparation.ipynb` — Prepares Project 3 readiness-aware orbital diagnostics, preserving velocity-space diagnostics and documenting missing distance/parallax input required for angular-momentum analysis.
+

@@ -61,3 +61,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 - `project3_milestone2_orbit_input_preparation.md` — prepares the candidate-level orbit input table and summarizes orbit-readiness based on astrometric, radial-velocity, and Galactocentric velocity fields.
 
 
+
+- `project3_milestone3_orbital_diagnostics_preparation.md` — Project 3 M3 report describing readiness-aware orbital diagnostics, velocity-space diagnostics, and the distance/parallax limitation preventing physical angular-momentum calculation.
+

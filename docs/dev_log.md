@@ -1094,3 +1094,15 @@ Changes:
 - Added an orbit-readiness summary in `report/project3_milestone2_orbit_input_preparation.md`.
 
 This milestone does not perform orbit integration yet. It establishes a clean, auditable input table for the next orbital characterization step.
+
+## Project 3 Milestone 3 — Orbital Diagnostics / Angular Momentum Preparation
+
+- Added `notebooks/14_project3_orbital_diagnostics_preparation.ipynb`.
+- Inspected the Project 3 orbit-input candidate table and found that the 27 selected candidates have Galactocentric velocity components but no valid parallax/distance information.
+- Preserved all 27 candidate rows in `data/processed/project3_orbital_diagnostics_candidates.csv`.
+- Added readiness-aware orbital diagnostic columns, including `can_compute_angular_momentum` and `missing_orbital_position_input`.
+- Added velocity-space diagnostics based on Galactocentric total velocity, tangential velocity, and metallicity.
+- Included angular-momentum columns such as `Lz_kpc_kms`, `Lperp_kpc_kms`, and `Ltot_kpc_kms` as explicit unavailable fields pending distance recovery.
+- Generated velocity-summary, metallicity-velocity, and orbital-readiness figures.
+- Added milestone report: `report/project3_milestone3_orbital_diagnostics_preparation.md`.
+
