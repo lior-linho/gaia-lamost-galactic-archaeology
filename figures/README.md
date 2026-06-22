@@ -58,3 +58,7 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project3_orbital_diagnostics_feh_velocity.png` — Project 3 metallicity versus Galactocentric total velocity diagnostic plot.
 - `project3_orbital_diagnostics_readiness_summary.png` — Project 3 orbital-readiness summary showing available velocity inputs and missing angular-momentum position inputs.
 
+
+- `project3_angular_momentum_lz_lperp.png` — Project 3 angular-momentum diagnostic comparing Lz and Lperp.
+- `project3_angular_momentum_lz_ltot.png` — Project 3 angular-momentum diagnostic comparing Lz and Ltot.
+- `project3_angular_momentum_feh_lz.png` — Project 3 metallicity versus Lz diagnostic plot.

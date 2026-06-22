@@ -1115,3 +1115,32 @@ This milestone does not perform orbit integration yet. It establishes a clean, a
 - Wrote `data/processed/project3_distance_recovery_summary.csv`.
 - Added `report/project3_milestone4_distance_parallax_recovery.md`.
 - Prepared the candidate table for later angular-momentum diagnostics (`Lz`, `Lperp`, `Ltot`) while documenting that inverse-parallax distances are exploratory and should be refined before publication-grade orbit analysis.
+
+## Project 3 Milestone 5 — Angular Momentum Diagnostics
+
+Added angular-momentum diagnostics for Project 3 distance-recovered candidates.
+
+Input:
+- `data/processed/project3_distance_recovered_candidates.csv`
+
+Notebook:
+- `notebooks/16_project3_angular_momentum_diagnostics.ipynb`
+
+Outputs:
+- `data/processed/project3_angular_momentum_candidates.csv`
+- `data/processed/project3_angular_momentum_summary.csv`
+
+Figures:
+- `figures/project3_angular_momentum_lz_lperp.png`
+- `figures/project3_angular_momentum_lz_ltot.png`
+- `figures/project3_angular_momentum_feh_lz.png`
+
+Report:
+- `report/project3_milestone5_angular_momentum_diagnostics.md`
+
+The milestone computes Galactocentric angular-momentum components and derived diagnostics:
+- `Lz_kpc_kms`
+- `Lperp_kpc_kms`
+- `Ltot_kpc_kms`
+
+All 27 distance-recovered candidates passed the angular-momentum diagnostic readiness filter. The outputs prepare the candidate sample for later orbital-family interpretation.
