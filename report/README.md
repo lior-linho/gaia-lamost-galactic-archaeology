@@ -64,3 +64,5 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project3_milestone3_orbital_diagnostics_preparation.md` — Project 3 M3 report describing readiness-aware orbital diagnostics, velocity-space diagnostics, and the distance/parallax limitation preventing physical angular-momentum calculation.
 
+
+- `project3_milestone4_distance_parallax_recovery.md` — Documents Project 3 M4 parallax/distance recovery and readiness for later angular-momentum diagnostics.

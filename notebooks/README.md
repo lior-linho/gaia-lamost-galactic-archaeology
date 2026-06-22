@@ -54,3 +54,5 @@ Each notebook should include:
 
 - `14_project3_orbital_diagnostics_preparation.ipynb` — Prepares Project 3 readiness-aware orbital diagnostics, preserving velocity-space diagnostics and documenting missing distance/parallax input required for angular-momentum analysis.
 
+
+- `15_project3_distance_parallax_recovery.ipynb` — Recovers Gaia parallax/distance information for Project 3 candidates and prepares distance-ready inputs for angular-momentum analysis.
