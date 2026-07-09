@@ -41,10 +41,10 @@ Planned orbital quantities include:
 
 Relevant existing work includes:
 
-- `notebooks/13_project3_orbit_input_preparation.ipynb`
-- `notebooks/14_project3_orbital_diagnostics_preparation.ipynb`
-- `notebooks/15_project3_distance_parallax_recovery.ipynb`
-- `notebooks/16_project3_angular_momentum_diagnostics.ipynb`
+- `notebooks/13_project_ii_orbit_input_preparation.ipynb`
+- `notebooks/14_project_ii_orbital_diagnostics_preparation.ipynb`
+- `notebooks/15_project_ii_distance_parallax_recovery.ipynb`
+- `notebooks/16_project_ii_angular_momentum_diagnostics.ipynb`
 - `data/processed/project3_orbit_input_candidates.csv`
 - `data/processed/project3_orbital_diagnostics_candidates.csv`
 - `data/processed/project3_distance_recovered_candidates.csv`
