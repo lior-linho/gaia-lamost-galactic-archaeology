@@ -61,3 +61,6 @@ Each notebook should include:
 
 - `19_project_ii_galpy_baseline_orbit_integration.ipynb` — Runs the first Project II baseline orbit integration with `galpy` and `MWPotential2014`, producing eccentricity, pericenter, apocenter, Zmax, and orbit-level diagnostic outputs.
 
+
+- `20_project_ii_orbit_angular_momentum_consistency.ipynb` — Compares Project II angular-momentum-based orbital-family labels with baseline `galpy` orbit-derived eccentricity, pericenter, apocenter, and Zmax diagnostics.
+

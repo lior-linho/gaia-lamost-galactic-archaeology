@@ -11,3 +11,7 @@
 - `project_ii_galpy_orbit_candidates.csv` — Candidate-level Project II baseline orbit-integration table, including galpy eccentricity, pericenter, apocenter, Zmax, energy proxy, and orbit-derived diagnostic flags.
 - `project_ii_galpy_orbit_summary.csv` — Summary table of Project II baseline orbit-integration results grouped by orbital-family interpretation, rotation class, and inclination proxy.
 
+
+- `project_ii_orbit_angular_momentum_consistency.csv` — Candidate-level Project II consistency table comparing angular-momentum interpretation labels with baseline galpy orbit-derived diagnostics.
+- `project_ii_orbit_angular_momentum_consistency_summary.csv` — Summary table of Project II orbit-angular-momentum consistency groups, including counts and median orbit, metallicity, and angular-momentum diagnostics.
+

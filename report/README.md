@@ -74,3 +74,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project_ii_galpy_baseline_orbit_integration.md` — Documents the first Project II baseline orbit integration with `galpy`, including orbital parameters, diagnostic counts, limitations, and next steps.
 
+
+- `project_ii_orbit_angular_momentum_consistency.md` — Documents the Project II consistency analysis between angular-momentum orbital-family interpretation and baseline galpy orbit-integration results.
+

@@ -67,3 +67,8 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_ii_galpy_orbit_zmax.png` — Project II baseline galpy orbit-integration Zmax distribution for the candidate sample.
 - `project_ii_galpy_orbit_rap_rperi.png` — Project II baseline galpy orbit-integration apocenter versus pericenter diagnostic plot.
 
+
+- `project_ii_orbit_eccentricity_vs_lz.png` — Project II consistency diagnostic comparing galpy eccentricity with Lz angular momentum.
+- `project_ii_orbit_zmax_vs_lperp.png` — Project II consistency diagnostic comparing galpy Zmax with Lperp angular momentum.
+- `project_ii_orbit_family_consistency.png` — Project II consistency-count diagnostic for angular-momentum labels versus orbit-integrated behavior.
+
