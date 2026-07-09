@@ -1,0 +1,15 @@
+project_iii_population_group,project_iv_metallicity_class,project_iv_chemical_followup_priority,n,feh_median,feh_min,feh_max,priority_score_median,ecc_median,zmax_median_kpc,Lz_median
+retrograde_halo,metal_intermediate,chemical_priority_B,4,-0.798,-0.883,-0.583,14.5,0.9253728314145936,4.126401525061253,-244.97211396233757
+retrograde_halo,metal_intermediate,chemical_review_only,4,-0.584,-0.68,-0.543,11.0,0.45649664253682587,3.9559280224168685,-2370.2270921199547
+retrograde_uncertain,metal_intermediate,chemical_review_only,3,-0.768,-0.915,-0.684,5.0,0.5235030774699629,1.90874701111668,-1067.8632614602427
+prograde_hot_or_heated_disk,metal_poor,chemical_priority_C,2,-1.701,-1.723,-1.679,12.0,0.7548211965642233,2.8886636951917923,1151.1506323968179
+radial_halo_or_gse_like,moderately_metal_poor,chemical_priority_B,2,-1.209,-1.311,-1.107,12.5,0.8645070063931812,1.0458989396068863,284.47267745545605
+retrograde_halo,metal_intermediate,chemical_priority_C,2,-0.8919999999999999,-0.951,-0.833,13.0,0.4930811534957965,4.86800086837478,-1328.5832428880344
+retrograde_halo,moderately_metal_poor,chemical_priority_A,2,-1.2825,-1.369,-1.196,18.0,0.8998415644898576,6.263689078637439,-300.15090490338457
+retrograde_halo,moderately_metal_poor,chemical_priority_B,2,-1.1715,-1.317,-1.026,14.0,0.7469011264366532,1.9158432841282593,-714.3990637194256
+general_halo,metal_intermediate,chemical_priority_C,1,-0.534,-0.534,-0.534,12.0,0.9477613225411664,5.485656744725901,110.09543752887312
+high_inclination_halo,moderately_metal_poor,chemical_priority_B,1,-1.472,-1.472,-1.472,15.0,0.6674059814388952,18.98889929051783,2417.299615178472
+prograde_hot_or_heated_disk,moderately_metal_poor,chemical_priority_C,1,-1.116,-1.116,-1.116,15.0,0.8879014418154255,8.44088156331249,548.7711180154512
+radial_halo_or_gse_like,metal_poor,chemical_priority_A,1,-1.539,-1.539,-1.539,19.0,0.8369854697847113,17.78440097652317,471.0723555977167
+radial_halo_or_gse_like,very_metal_poor,chemical_priority_A,1,-2.108,-2.108,-2.108,14.0,0.949393608871366,2.111655964691123,149.38398969702428
+retrograde_halo,very_metal_poor,chemical_priority_A,1,-2.213,-2.213,-2.213,21.0,0.7087529115246556,52.847639658481675,-961.1463243325856
