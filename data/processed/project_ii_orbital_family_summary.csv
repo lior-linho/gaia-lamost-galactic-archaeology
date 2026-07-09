@@ -1,0 +1,9 @@
+orbital_family_interpretation,rotation_class,inclination_proxy_class,n,feh_median,feh_min,feh_max,vtan_median,vtot_median,Lz_median,Lperp_median,Ltot_median
+retrograde_low_inclination_halo_like,retrograde,low_Lperp,9,-0.768,-1.317,-0.543,114.30465630354097,,-1125.1355493306885,540.7301463200286,1184.7396792230898
+radial_metal_poor_halo_like,low_Lz_or_radial,low_Lperp,6,-1.1515,-2.108,-0.534,202.8846727461776,,101.2149045431499,200.29195234057437,353.2972994607218
+radial_metal_poor_halo_like,low_Lz_or_radial,moderate_Lperp,4,-1.126,-1.539,-0.583,237.7915149428395,,-243.80556053236296,962.6394771071434,1030.247775967512
+prograde_hot_or_metal_poor_candidate,prograde,low_Lperp,3,-1.679,-1.723,-1.116,303.912485613191,,770.758487729764,385.25501777195143,829.5780093169459
+retrograde_moderate_inclination_halo_like,retrograde,moderate_Lperp,2,-0.76,-0.951,-0.569,171.7791517322329,,-895.5793070607801,963.3566540077204,1315.6751855700718
+low_Lz_or_radial_candidate,low_Lz_or_radial,low_Lperp,1,-0.796,-0.796,-0.796,141.12667198580328,,-54.933104906816496,150.91014971933126,160.59738261570232
+prograde_high_inclination_halo_like,prograde,high_Lperp,1,-1.472,-1.472,-1.472,426.6861088882448,,2417.299615178472,1650.511525452589,2927.033605067393
+retrograde_high_inclination_halo_like,retrograde,high_Lperp,1,-2.213,-2.213,-2.213,413.70646747833314,,-961.1463243325856,3531.4575141993287,3659.9172711105016
