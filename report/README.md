@@ -80,3 +80,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project_iii_initial_population_classification.md` — Documents the initial Project III stellar-population classification, including radial halo or GSE-like candidates, retrograde halo candidates, high-inclination halo candidates, prograde hot or heated-disk candidates, and retrograde uncertain candidates.
 
+
+- `project_iii_population_classification_review.md` — Reviews Project III population classifications and defines priority tiers for candidate follow-up.
+

@@ -67,3 +67,6 @@ Each notebook should include:
 
 - `21_project_iii_initial_population_classification.ipynb` — Assigns first-pass Project III stellar-population interpretation labels using Project II angular-momentum diagnostics, baseline galpy orbit parameters, metallicity, and consistency evidence.
 
+
+- `22_project_iii_population_classification_review.ipynb` — Reviews Project III initial population labels and identifies priority candidates for later literature comparison, chemical interpretation, and uncertainty propagation.
+

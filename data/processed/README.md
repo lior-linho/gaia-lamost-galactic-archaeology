@@ -19,3 +19,7 @@
 - `project_iii_population_candidates.csv` — Candidate-level Project III initial stellar-population classification table with population labels, population groups, confidence tags, orbit diagnostics, angular-momentum diagnostics, metallicity, and supporting evidence notes.
 - `project_iii_population_summary.csv` — Summary table of Project III initial stellar-population groups, including counts and median metallicity, eccentricity, Zmax, pericenter, apocenter, Lz, and Lperp.
 
+
+- `project_iii_population_priority_candidates.csv` — Candidate-level Project III priority table ranking population candidates for later literature comparison, chemical interpretation, and uncertainty propagation.
+- `project_iii_population_review_summary.csv` — Summary table of Project III priority tiers by population group, including median score, metallicity, eccentricity, Zmax, Lz, and Lperp.
+
