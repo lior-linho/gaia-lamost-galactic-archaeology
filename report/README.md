@@ -83,3 +83,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project_iii_population_classification_review.md` — Reviews Project III population classifications and defines priority tiers for candidate follow-up.
 
+
+- `project_iv_metallicity_structure_and_chemical_readiness.md` — Documents Project IV metallicity structure and chemical-readiness analysis based on available [Fe/H] information.
+

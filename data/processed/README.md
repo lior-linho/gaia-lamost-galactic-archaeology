@@ -23,3 +23,7 @@
 - `project_iii_population_priority_candidates.csv` — Candidate-level Project III priority table ranking population candidates for later literature comparison, chemical interpretation, and uncertainty propagation.
 - `project_iii_population_review_summary.csv` — Summary table of Project III priority tiers by population group, including median score, metallicity, eccentricity, Zmax, Lz, and Lperp.
 
+
+- `project_iv_metallicity_candidates.csv` — Candidate-level Project IV metallicity and chemical-readiness table, including metallicity classes, chemical follow-up priorities, Project III population labels, and orbit diagnostics.
+- `project_iv_metallicity_summary.csv` — Summary table of Project IV metallicity classes and chemical follow-up priorities across Project III population groups.
+

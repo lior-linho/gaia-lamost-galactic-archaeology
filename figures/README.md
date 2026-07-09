@@ -77,3 +77,8 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project_iii_population_feh_eccentricity.png` — Project III metallicity versus galpy eccentricity diagnostic figure by initial population group.
 - `project_iii_population_lz_zmax.png` — Project III Lz versus Zmax diagnostic figure by initial population group.
 
+
+- `project_iv_feh_distribution.png` — Project IV [Fe/H] distribution for the candidate sample.
+- `project_iv_feh_by_population_group.png` — Project IV [Fe/H] comparison across Project III population groups.
+- `project_iv_feh_by_priority_tier.png` — Project IV [Fe/H] comparison across Project III priority tiers.
+

@@ -70,3 +70,6 @@ Each notebook should include:
 
 - `22_project_iii_population_classification_review.ipynb` — Reviews Project III initial population labels and identifies priority candidates for later literature comparison, chemical interpretation, and uncertainty propagation.
 
+
+- `23_project_iv_metallicity_structure_and_chemical_readiness.ipynb` — Reviews Project IV chemical readiness using the currently available [Fe/H] information and summarizes metallicity structure across Project III population groups.
+
