@@ -1,0 +1,14 @@
+column,available,non_null_count,total_rows,non_null_fraction
+source_id,True,27,27,1.0
+ra_gaia,True,27,27,1.0
+dec_gaia,True,27,27,1.0
+pmra_recovered,True,27,27,1.0
+pmdec_recovered,True,27,27,1.0
+rv,True,27,27,1.0
+distance_for_l_kpc,True,27,27,1.0
+distance_recovery_source,True,27,27,1.0
+distance_quality_flag,True,27,27,1.0
+feh,True,27,27,1.0
+orbital_family_interpretation,True,27,27,1.0
+rotation_class,True,27,27,1.0
+inclination_proxy_class,True,27,27,1.0
