@@ -27,3 +27,7 @@
 - `project_iv_metallicity_candidates.csv` — Candidate-level Project IV metallicity and chemical-readiness table, including metallicity classes, chemical follow-up priorities, Project III population labels, and orbit diagnostics.
 - `project_iv_metallicity_summary.csv` — Summary table of Project IV metallicity classes and chemical follow-up priorities across Project III population groups.
 
+
+- `project_vi_uncertainty_inventory.csv` — Candidate-level Project VI uncertainty inventory, tracking validation risk, validation priority, population evidence, chemical readiness, orbit diagnostics, and distance provenance.
+- `project_vi_validation_priority_candidates.csv` — Project VI validation-priority table ranking candidates for later Monte Carlo uncertainty propagation and literature comparison.
+

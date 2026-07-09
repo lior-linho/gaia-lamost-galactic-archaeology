@@ -73,3 +73,6 @@ Each notebook should include:
 
 - `23_project_iv_metallicity_structure_and_chemical_readiness.ipynb` — Reviews Project IV chemical readiness using the currently available [Fe/H] information and summarizes metallicity structure across Project III population groups.
 
+
+- `24_project_vi_validation_uncertainty_inventory.ipynb` — Reviews Project VI validation priorities and uncertainty inventory for the current Gaia-LAMOST candidate sample.
+
