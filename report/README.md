@@ -68,3 +68,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 - `project3_milestone4_distance_parallax_recovery.md` — Documents Project 3 M4 parallax/distance recovery and readiness for later angular-momentum diagnostics.
 
 - `project3_milestone5_angular_momentum_diagnostics.md` — Documents Project 3 Milestone 5 angular-momentum calculation and diagnostic interpretation.
+
+- `project_ii_orbital_family_interpretation.md` — Project II orbital-family interpretation report using angular momentum, velocity diagnostics, metallicity flags, and distance provenance to assign candidate-level orbital-family interpretation labels.
+

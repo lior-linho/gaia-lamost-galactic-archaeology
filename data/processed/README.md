@@ -3,3 +3,7 @@
 
 - `project3_angular_momentum_candidates.csv` — Candidate-level Project 3 angular-momentum diagnostics computed from distance-recovered inputs.
 - `project3_angular_momentum_summary.csv` — Summary statistics and simple diagnostic class counts for Project 3 angular-momentum analysis.
+
+- `project_ii_orbital_family_candidates.csv` — Candidate-level Project II orbital-family interpretation table, including interpretation labels, confidence flags, angular-momentum diagnostics, velocity evidence, metallicity evidence, and distance provenance.
+- `project_ii_orbital_family_summary.csv` — Summary table of Project II orbital-family interpretation groups, including counts and median metallicity, velocity, and angular-momentum diagnostics.
+
