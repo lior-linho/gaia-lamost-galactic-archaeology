@@ -71,3 +71,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project_ii_orbital_family_interpretation.md` — Project II orbital-family interpretation report using angular momentum, velocity diagnostics, metallicity flags, and distance provenance to assign candidate-level orbital-family interpretation labels.
 
+
+- `project_ii_galpy_baseline_orbit_integration.md` — Documents the first Project II baseline orbit integration with `galpy`, including orbital parameters, diagnostic counts, limitations, and next steps.
+

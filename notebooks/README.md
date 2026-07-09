@@ -58,3 +58,6 @@ Each notebook should include:
 - `15_project_ii_distance_parallax_recovery.ipynb` — Recovers Gaia parallax/distance information for Project 3 candidates and prepares distance-ready inputs for angular-momentum analysis.
 
 - `16_project_ii_angular_momentum_diagnostics.ipynb` — Computes Project 3 Galactocentric angular-momentum diagnostics from distance-recovered candidates, including Lz, Lperp, and Ltot.
+
+- `19_project_ii_galpy_baseline_orbit_integration.ipynb` — Runs the first Project II baseline orbit integration with `galpy` and `MWPotential2014`, producing eccentricity, pericenter, apocenter, Zmax, and orbit-level diagnostic outputs.
+

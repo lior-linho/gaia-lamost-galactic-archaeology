@@ -7,3 +7,7 @@
 - `project_ii_orbital_family_candidates.csv` — Candidate-level Project II orbital-family interpretation table, including interpretation labels, confidence flags, angular-momentum diagnostics, velocity evidence, metallicity evidence, and distance provenance.
 - `project_ii_orbital_family_summary.csv` — Summary table of Project II orbital-family interpretation groups, including counts and median metallicity, velocity, and angular-momentum diagnostics.
 
+
+- `project_ii_galpy_orbit_candidates.csv` — Candidate-level Project II baseline orbit-integration table, including galpy eccentricity, pericenter, apocenter, Zmax, energy proxy, and orbit-derived diagnostic flags.
+- `project_ii_galpy_orbit_summary.csv` — Summary table of Project II baseline orbit-integration results grouped by orbital-family interpretation, rotation class, and inclination proxy.
+

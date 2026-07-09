@@ -62,3 +62,8 @@ The figures are not standalone discovery evidence. They are supporting diagnosti
 - `project3_angular_momentum_lz_lperp.png` — Project 3 angular-momentum diagnostic comparing Lz and Lperp.
 - `project3_angular_momentum_lz_ltot.png` — Project 3 angular-momentum diagnostic comparing Lz and Ltot.
 - `project3_angular_momentum_feh_lz.png` — Project 3 metallicity versus Lz diagnostic plot.
+
+- `project_ii_galpy_orbit_eccentricity.png` — Project II baseline galpy orbit-integration eccentricity distribution for the candidate sample.
+- `project_ii_galpy_orbit_zmax.png` — Project II baseline galpy orbit-integration Zmax distribution for the candidate sample.
+- `project_ii_galpy_orbit_rap_rperi.png` — Project II baseline galpy orbit-integration apocenter versus pericenter diagnostic plot.
+
