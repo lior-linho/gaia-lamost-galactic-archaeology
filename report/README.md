@@ -77,3 +77,6 @@ Project 2 should be read as an exploratory but reproducible machine-learning ext
 
 - `project_ii_orbit_angular_momentum_consistency.md` — Documents the Project II consistency analysis between angular-momentum orbital-family interpretation and baseline galpy orbit-integration results.
 
+
+- `project_iii_initial_population_classification.md` — Documents the initial Project III stellar-population classification, including radial halo or GSE-like candidates, retrograde halo candidates, high-inclination halo candidates, prograde hot or heated-disk candidates, and retrograde uncertain candidates.
+

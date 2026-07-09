@@ -64,3 +64,6 @@ Each notebook should include:
 
 - `20_project_ii_orbit_angular_momentum_consistency.ipynb` — Compares Project II angular-momentum-based orbital-family labels with baseline `galpy` orbit-derived eccentricity, pericenter, apocenter, and Zmax diagnostics.
 
+
+- `21_project_iii_initial_population_classification.ipynb` — Assigns first-pass Project III stellar-population interpretation labels using Project II angular-momentum diagnostics, baseline galpy orbit parameters, metallicity, and consistency evidence.
+

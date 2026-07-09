@@ -15,3 +15,7 @@
 - `project_ii_orbit_angular_momentum_consistency.csv` — Candidate-level Project II consistency table comparing angular-momentum interpretation labels with baseline galpy orbit-derived diagnostics.
 - `project_ii_orbit_angular_momentum_consistency_summary.csv` — Summary table of Project II orbit-angular-momentum consistency groups, including counts and median orbit, metallicity, and angular-momentum diagnostics.
 
+
+- `project_iii_population_candidates.csv` — Candidate-level Project III initial stellar-population classification table with population labels, population groups, confidence tags, orbit diagnostics, angular-momentum diagnostics, metallicity, and supporting evidence notes.
+- `project_iii_population_summary.csv` — Summary table of Project III initial stellar-population groups, including counts and median metallicity, eccentricity, Zmax, pericenter, apocenter, Lz, and Lperp.
+
